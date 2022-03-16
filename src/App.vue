@@ -2,8 +2,10 @@
   <div class="app">
     <Tweet
       v-for="tweet in tweets"
-      :key="tweet.user"
-      :tweet="tweet"
+      :key="tweet.id"
+      :user="tweet.user"
+      :timestamp="tweet.timestamp"
+      :message="tweet.message"
     />
   </div>
 </template>
